@@ -59,6 +59,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     String Name;
     FirebaseUser firebaseUser;
     String UserUid;
+    boolean firsttime=false;
     ChildEventListener markerUpdateListener = new ChildEventListener() {
 
         @Override
@@ -195,7 +196,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Location   location = locationResult.getLastLocation();
 
 
-//            setUserLocation(location);
+            setUserLocation(location);
             Users2 users2=new Users2(location.getLatitude(),location.getLongitude(),location.getBearing(),Name);
              databaseReference.child(UserUid).setValue(users2);
 
@@ -239,12 +240,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //for rotation of car
             markerOptions.rotation(location.getBearing());
             markerOptions.anchor((float)0.5,(float)0.5);
+            markerOptions.title("My Car");
             userMarker=mMap.addMarker(markerOptions);
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,17));
+
         }else{
             userMarker.setPosition(latLng);
             userMarker.setRotation(location.getBearing());
-
+            if(!firsttime){
+                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,19));
+                firsttime=true;
+            }
         }
 //        if(usercirclelocation==null){
 //            CircleOptions circleOptions=new CircleOptions();

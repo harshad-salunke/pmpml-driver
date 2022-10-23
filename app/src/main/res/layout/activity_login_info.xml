@@ -78,10 +78,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="@color/white"
-                android:hint="First Name"
+                android:hint="From Stop name"
                 app:boxStrokeColor="@color/black"
-                app:endIconMode="clear_text"
 
+                app:endIconMode="clear_text"
                 app:hintTextColor="#00BCD4">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="@color/white"
-                android:hint="Last Name"
+                android:hint="To Stop name"
 
                 android:outlineSpotShadowColor="@color/red"
                 app:boxStrokeColor="@color/black"

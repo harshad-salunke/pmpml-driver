@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "758735618048-oe7mbr3llis9arh4p4ucf1oqhqq4n1ka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.driver",
+            "certificate_hash": "b1c8cdeac4c58840a62349ed9178a8766ed77d6f"
+          }
+        },
+        {
           "client_id": "758735618048-luakuju14ldudab3m3ergfsjq1icp80r.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -51,6 +59,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "758735618048-6l477qla66osnimsth330sfdo53pinsa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mymap",
+            "certificate_hash": "b1c8cdeac4c58840a62349ed9178a8766ed77d6f"
+          }
+        },
         {
           "client_id": "758735618048-netliig85q0s6quenanotu9br70unrc4.apps.googleusercontent.com",
           "client_type": 1,
